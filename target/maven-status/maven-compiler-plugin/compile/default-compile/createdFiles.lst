@@ -1,0 +1,6 @@
+com\dormitory\packagecollection\controller\PackageController$CreatePackageRequest.class
+com\dormitory\packagecollection\PackageCollectionApplication.class
+com\dormitory\packagecollection\repository\PackageRepository.class
+com\dormitory\packagecollection\controller\PackageController.class
+com\dormitory\packagecollection\controller\PackageController$UpdateStatusRequest.class
+com\dormitory\packagecollection\entity\Package.class
