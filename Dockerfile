@@ -5,6 +5,7 @@ RUN mvn clean package -DskipTests
 
 # 第二階段：使用輕量級 Java 環境執行程式
 FROM eclipse-temurin:21-jre-jammy
-COPY --from=build /target/package-collection-0.0.1-SNAPSHOT.jar app.jar
+# 密技：用 *.jar 自動匹配檔名，不管它叫什麼名字都能抓到
+COPY --from=build /target/*.jar app.jar
 EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "app.jar"]
